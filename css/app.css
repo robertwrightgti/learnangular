@@ -77,3 +77,6 @@
 .artistlist-item:last-child  {
     border-bottom:none;
 }
+
+.btn { background-color: purple; }
+.btn:hover { background-color: orange; }
