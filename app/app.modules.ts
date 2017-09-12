@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './component.app';
 import { ArtistItemComponent } from './component.artist-item';
 import { ArtistDetailsComponent } from './component.artist-details';
+import { SearchPipe } from './pipe.search';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { ArtistDetailsComponent } from './component.artist-details';
   ],
   //which custom components to use
   declarations: [
-    AppComponent, ArtistItemComponent, ArtistDetailsComponent
+    AppComponent, ArtistItemComponent, ArtistDetailsComponent, SearchPipe
   ],
   //the main root component
   bootstrap: [
