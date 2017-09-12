@@ -18,6 +18,11 @@ export class Artist {
 export class AppComponent {
   artists = ARTISTS;
   currentArtist: Artist;
+
+  showArtist(item) {
+    this.currentArtist = item;
+    console.log(this.currentArtist)
+  }
 }
  
 var ARTISTS: Artist[] = [

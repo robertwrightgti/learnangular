@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './component.app';
 import { ArtistItemComponent } from './component.artist-item';
+import { ArtistDetailsComponent } from './component.artist-details';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { ArtistItemComponent } from './component.artist-item';
   ],
   //which custom components to use
   declarations: [
-    AppComponent, ArtistItemComponent
+    AppComponent, ArtistItemComponent, ArtistDetailsComponent
   ],
   //the main root component
   bootstrap: [

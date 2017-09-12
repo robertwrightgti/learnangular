@@ -11,8 +11,16 @@
 
 
 
-<ul>
-    <li class="artistlist-item cf" *ngFor="let item of artists">
+<ul class="artistlist cf"
+    *ngIf="query">
+    <li class="artistlist-item cf" 
+        (click)="showArtist(item); query='';"
+        *ngFor="let item of artists">
         <artist-item class="content" [artist]=item></artist-item>
     </li>
-<ul>
+</ul>
+
+<artist-details 
+    *ngIf="currentArtist && !query" 
+    [artist]="currentArtist">
+</artist-details>
