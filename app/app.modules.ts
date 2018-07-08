@@ -7,7 +7,7 @@ import { AppComponent } from './component.app';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   declarations: [
     AppComponent
