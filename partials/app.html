@@ -2,7 +2,7 @@
     <h1 class="search-headline">Artist Directory</h1>
     <label class="search-label">search 
         <!--only show if AppComponent has a name property-->
-        <span *ngIf="name">for: {{ name }}</span>
+        <span *ngIf="name">forg: {{ name }}</span>
         <!--bind input to a local variable "newArtist"-->
         <input class="search-input" #newArtist
             (keyup.enter)="addArtist(newArtist.value); newArtist.value=''"
